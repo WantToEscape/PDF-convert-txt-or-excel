@@ -14,8 +14,11 @@ Private Declare Sub mouse_event Lib "user32" (ByVal dwFlags As Long, ByVal dx As
 
 
 Private Const WM_CHAR = &H102             '  PostMessage String
+
 Private Const BM_CLICK = &HF5             '  hWnd click
+
 Private Const MOUSEEVENTF_LEFTDOWN = &H2  '  left button down
+
 Private Const MOUSEEVENTF_LEFTUP = &H4    '  left button up
 
 Sub test()
@@ -205,6 +208,7 @@ End Sub
 
 
 Private Sub AddSheet(sheetName As String)      'add new sheet
+
     Application.ScreenUpdating = False
     Application.DisplayAlerts = False
         On Error Resume Next
